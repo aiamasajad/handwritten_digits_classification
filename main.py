@@ -28,9 +28,4 @@ model.compile(optimizer='adam',
 history = model.fit(x_train,y_train, epochs=4, validation_data=(x_test,y_test))
 
 # Plot training & validation accuracy values
-img = cv2.imread("digit_8.png")[:,:,0]
-img = np.invert(np.array([img]))
-prediction = model.predict(img)
-print("Predicted digit:", np.argmax(prediction))
-plt.imshow(img[0], cmap=plt.cm.binary)
-plt.show()
+
