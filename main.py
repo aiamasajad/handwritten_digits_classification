@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-import cv2
+
 import matplotlib.pyplot as plt
 
 # Load the MNIST dataset
@@ -28,4 +28,35 @@ model.compile(optimizer='adam',
 history = model.fit(x_train,y_train, epochs=4, validation_data=(x_test,y_test))
 
 # Plot training & validation accuracy values
+
+plt.plot(history.history['accuracy'], label='Training Accuracy')
+plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
+
+plt.title('Model Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
+
+
+# Evaluate the model
+
+loss, accuracy = model.evaluate(x_test, y_test)
+print("Test Accuracy:", accuracy)
+
+
+# Make a prediction
+
+prediction = model.predict(np.array([x_test[0]]))
+
+print("Predicted Digit:", np.argmax(prediction))
+print("Actual Digit:", y_test[0])
+
+
+# Display the image
+
+plt.imshow(x_test[0], cmap='gray')
+plt.show()
+
+
 
