@@ -6,10 +6,10 @@ This project implements a Handwritten Digit Recognition System using TensorFlow 
 **Dataset**
 
 The project uses the MNIST dataset, which contains:
-  60,000 training images
-  10,000 testing images
-  Image size: 28 × 28 pixels
-  Classes: Digits 0–9
+  - 60,000 training images
+  - 10,000 testing images
+  - Image size: 28 × 28 pixels
+  - Classes: Digits 0–9
 
 **Technologies Used**
 
