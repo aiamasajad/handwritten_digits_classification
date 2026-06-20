@@ -13,7 +13,7 @@ The project uses the MNIST dataset, which contains:
 
 **Technologies Used**
 
-  Python
-  TensorFlow/Keras
-  NumPy
-  Matplotlib
+  - Python
+  - TensorFlow/Keras
+  - NumPy
+  - Matplotlib
