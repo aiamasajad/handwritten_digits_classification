@@ -1,4 +1,5 @@
 **Handwritten Digit Classification**
+
 **Description**
 
 This project implements a Handwritten Digit Recognition System using TensorFlow and the MNIST dataset. The model is trained on handwritten digit images (0–9) and predicts the digit present in an input image.
